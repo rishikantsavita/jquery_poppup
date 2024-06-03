@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquerypopup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!-- toggleClass popup  -->
+    <section class="popup-section">
+        <div class="container">
+            <div class="popup">
+                <h2>ToggleClass Popup</h2>
+                <button class="popup-click">click me</button>
+            </div>
+            <div class="content">
+                <div class="modal">
+                    <h3>Modal Title</h3>
+                    <i class="fa fa-times cut1" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="btn">
+                    <button class="close-btn">Close</button>
+                    <button class="save-btn">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- hide and show popup  -->
+
+    <section class="hide-section">
+        <div class="container">
+            <div class="hide-heading">
+                <h2>Hide And Show Popup</h2>
+                <button class="hide-click">Click Now</button>
+            </div>
+            <div class="hide-content ">
+                <div class="modal">
+                    <h3>Modal Title</h3>
+                    <i class="fa fa-times cut2" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="btn">
+                    <button class="close-btn-hide">Close</button>
+                    <button class="save-btn-hide">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- removeClass and addclass popup -->
+
+    <section class="remove-section">
+        <div class="container">
+            <div class="hide-heading">
+                <h2>Remove Class And Addclass Popup </h2>
+                <button class="remove-click">Click Now</button>
+            </div>
+            <div class="remove-content ">
+                <div class="modal">
+                    <h3>Modal Title</h3>
+                    <i class="fa fa-times cut3" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="btn">
+                    <button class="close-btn-remove">Close</button>
+                    <button class="save-btn-remove">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- toggle popup section  -->
+    <section class="togg-section">
+        <div class="container">
+            <div class="hide-heading">
+                <h2>Toggle Popup </h2>
+                <button class="togg-click">Click Now</button>
+            </div>
+            <div class="togg-content ">
+                <div class="modal">
+                    <h3>Modal Title</h3>
+                    <i class="fa fa-times cut4" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="btn">
+                    <button class="close-btn-togg">Close</button>
+                    <button class="save-btn-togg">Save Changes</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section> 
+        <!-- code by pramod bhaiya  -->
+        <button class="btn1">Slide</button>
+
+
+        <div class="toggle-content">
+            Slide me  
+        </div>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(Document).ready(function () {
+            //toggleclass popup jquery
+            $('.popup-click').click(function () {
+                $('.content').toggleClass('active');
+            });
+
+            $('.cut1, .close-btn').click(function () {
+                $('.content').removeClass('active');
+            });
+
+            //hide and show popup jquery
+            $('.hide-click').click(function () {
+                $('.hide-content').show();
+            });
+
+            $('.cut2, .close-btn-hide').click(function () {
+                $('.hide-content').hide();      // hide karega first d-none h 
+                // $('.hide-content').show();    // show karega first d-block h 
+            });
+
+            //removeclass and addclass popup juery
+            $('.remove-click').click(function () {
+                $('.remove-content').addClass('show');
+            });
+
+            $('.cut3, .close-btn-remove').click(function () {
+                $('.remove-content').removeClass('show');
+            });
+
+            // toggle popup jquery
+            $('.togg-click').click(function () {
+                $('.togg-content').toggle();
+            });
+
+            $('.cut4, .close-btn-togg').click(function () {
+                $('.togg-content').removeClass('show');
+            });
+
+
+            // code by pramod bhaiya
+            $('.btn1').hover(function(){
+                // $('.toggle-content').slideDown();
+                // $('.toggle-content').slideToggle(); 
+                // $('.toggle-content').slideUp();
+            })
+
+            $('.btn1').dblclick(function(){
+                // $('.toggle-content').slideDown();
+                // $('.toggle-content').slideToggle();
+                $('.toggle-content').slideUp();
+            })
+            $('.btn1').mouseenter(function(){
+                // $('.toggle-content').slideDown();
+                // $('.toggle-content').slideToggle();
+                $('.toggle-content').slideUp();
+            })
+
+            // $('.toggle-content');
+
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
