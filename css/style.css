@@ -166,6 +166,14 @@ display: block;  }  */
     width: 400px;
     border: solid 1px #ddd;
     /* display: none; */
-    background-color: #007dff;
+    background-color: #007dff82;
+    color: #fff;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 80px; 
+    margin: 0 auto;
 }
+
 
