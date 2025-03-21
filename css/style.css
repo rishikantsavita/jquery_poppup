@@ -47,7 +47,7 @@ display: block;  }  */
     line-height: normal;
 }
 
-.popup-click, .hide-click, .remove-click, .togg-click {
+.popup-click, .hide-click, .remove-click, .togg-click, .btn1 {
     cursor: pointer;
     text-align: center;
     border-radius: 5px;
