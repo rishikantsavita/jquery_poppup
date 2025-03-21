@@ -169,11 +169,10 @@ display: block;  }  */
     background-color: #007dff82;
     color: #fff;
     padding: 30px;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 24px;
+    line-height: 32px;
     font-weight: 600;
-    margin-bottom: 80px; 
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 
