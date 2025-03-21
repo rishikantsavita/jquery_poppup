@@ -148,16 +148,24 @@ display: block;  }  */
     cursor: pointer;
 }
 
-.hide-section, .remove-section{
+.hide-section, .remove-section, .slide-section {
     border: 1px solid rgba(0, 0, 0, .2);
     border-color: #6c757d;
 }
 
+.slide-box {
+    text-align: center;
+}
 
+.slide-box button {
+    margin-top: 20px;
+}
 
 .toggle-content {
     height: 300px;
     width: 400px;
     border: solid 1px #ddd;
     /* display: none; */
+    background-color: #007dff;
 }
+
